@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+double x,b,a;
+
+cout << "Enter your weight: " << endl; cin >> x;
+cout << "Enter your height: " <<endl; cin >> b;
+
+a = x/(b*b);
+
+if(a > 40) {
+	printf("Forward obese \n");
+}
+
+if(a >= 30 && a < 40) {
+	
+	printf("Obese \n");
+}else if(a >= 25 && a < 30 ) {
+	
+	printf("Over weight \n");;
+}else{
+	
+	if(a >= 15 && a < 25) {
+		
+		printf("Normal weight\n");
+	}else{
+		
+		printf("Weak slim shady\n");
+	}
+}
+
+system("pause");
+}
